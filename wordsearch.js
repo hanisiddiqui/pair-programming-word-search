@@ -19,10 +19,10 @@ const wordSearch = (letters, word) => {
 const transpose = (letters) => {
   const newArray = [];
 
-  for (let i = 0; i < letters.length - 1; i++) {
+  for (let i = 0; i < letters[0].length; i++) {
     newArray[i] = [];
 
-    for (let j = 0; j < letters[i].length; j++) {
+    for (let j = 0; j < letters.length; j++) {
       newArray[i][j] = letters[j][i];
     }
   }
